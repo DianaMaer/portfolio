@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-import { render } from 'react-dom';
+import './Home.css';
 
 //create a typing effect
 //const typingEffect= (text) => {
@@ -8,15 +8,13 @@ import { render } from 'react-dom';
 //}
 
 class Calling extends Component{
-    constructor(props){
-        super(props);
-    }
-
     render(){
         console.log('props from calling:', this.props);
             
         return(
-            <div>test from Calling</div>
+            <>
+            <ReactTypingEffect className="calling-text" text={this.props.calling}/>
+            </>
         )
             
     }

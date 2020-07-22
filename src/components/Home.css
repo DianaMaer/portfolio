@@ -1,8 +1,46 @@
+/*style the main section, whitch is the same for every compoennt (navbar + component with the lists and content)*/
+.main-component{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.home{
+  height: 90vh;
+}
+
+.component-content{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: flex-end;
+  text-align: end;
+  height: 100%;
+  justify-content: space-between;
+}
+  
+/*style Calling Component
 .calling{
     margin: 20px 0px 40px 0;
     font-size: 30px;
     font-weight: 700;
-  }
+  }*/
+
+.calling-text{
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f3ec78;
+    background-image: linear-gradient(to left, #6DADDB 0%, #313131 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
 
 .additional-name {
   font-size: 30px;

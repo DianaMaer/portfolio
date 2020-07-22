@@ -12,7 +12,7 @@ const portfolio = {
     title: '',
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat.  '
   },
 }
 
