@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Skillset from './components/Skillset';
+import Projects from './components/Projects';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const portfolio = {
+  profile: {
+    title: '',
+    name: 'Diana Maerean',
+    calling: ['Web Designer','Frontend Developer'],
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
+  },
+}
+
+
+
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Navbar />
+        
+        <Switch>
+          <Route exact path='/' render=
+            {() => (<Home {...portfolio.profile}/>)} /> 
+          <Route path='/projects' render=
+            {() => (<Projects />)} />
+          <Route path ='/skillset' render = 
+            {() => (<Skillset />)} />
+       </Switch>
+      {/*<Home {...portfolio.profile} />
+      <Projects/>
+      <Skillset/>*/}
+       
+      </div>
+    );
+  }
 }
 
 export default App;

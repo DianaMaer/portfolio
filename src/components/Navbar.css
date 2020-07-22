@@ -1,0 +1,30 @@
+.navbar{
+    width: 10%;
+    /*align-self: flex-end;*/
+    position: fixed;
+    bottom: 120px;
+    /*left: 5vh;*/
+    list-style: none;
+  }
+  
+  .navbar a{ 
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Anonymous Pro', monospace;*/
+    text-decoration: none;
+    
+  }
+
+  .navbar li{
+    margin: 4px 0;
+  }
+  
+  .active{ 
+    color: grey !important;
+  }
+  
+  .navbar li a:hover{
+    font-weight: 500;
+  }
+  
+  
