@@ -5,16 +5,19 @@ import Headline from './Headline';
 import AdditionalName from './AdditionalName';
 import './Home.css';
 import '../App.css';
+import './Projects.css';
 
 
 const Home = (props) => {
     console.log('props from home:', props);
     return(
-        <div className="main-component home" id='home'>
+        <div className="main-component-home" id='home'>
             <AdditionalName name={props.name} title={props.title} />
             <div className="component-content">
-                <Name name={props.name} />
-                <Calling calling={props.calling} />
+                {/*<div className="name-calling-wrapper">*/}
+                    <Name name={props.name} />
+                    <Calling calling={props.calling} />
+                {/*</div>*/}
                 <Headline about={props.about} />
             </div>
         </div>

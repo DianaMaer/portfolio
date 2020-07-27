@@ -1,12 +1,9 @@
-/*style the main section, whitch is the same for every compoennt (navbar + component with the lists and content)*/
-.main-component{
+/*style the main section*/
+.main-component-home{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px 0;
-}
-
-.home{
+  padding: 2.5rem 0;
   height: 90vh;
 }
 
@@ -21,29 +18,28 @@
 }
   
 /*style Calling Component
-.calling{
-    margin: 20px 0px 40px 0;
-    font-size: 30px;
-    font-weight: 700;
-  }*/
+.name-calling-wrapper{
+  height: 50%;
+  #typing-effect{
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 5.25rem;
+}
+}*/
+
 
 .calling-text{
   font-size: 1.75rem;
   font-weight: 900;
   text-transform: uppercase;
   font-family: 'Roboto Mono', monospace;
-  background-color: #f3ec78;
-    background-image: linear-gradient(to left, #6DADDB 0%, #313131 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  margin-top: 5.25rem;
 }
 
-
 .additional-name {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: brown;
 }
 
