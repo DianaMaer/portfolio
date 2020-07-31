@@ -1,9 +1,7 @@
 .navbar{
     width: 10%;
-    /*align-self: flex-end;*/
     position: fixed;
     bottom: 4.375rem;
-    /*left: 5vh;*/
     list-style: none;
   }
   

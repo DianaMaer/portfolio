@@ -12,12 +12,12 @@ const portfolio = {
     mainSection: true,
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. ',
   },
   projects: {
-    name: 'Diana Maerean',
-    calling: ['Web Designer','Frontend Developer'],
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
+    nameProject: 'Project1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula.',
+    src: './images/test1',
   },
 }
 
@@ -38,7 +38,7 @@ class App extends Component {
             {() => (<Skillset />)} />
        </Switch>*/}
       <Home {...portfolio.profile} />
-      <Projects {...portfolio.projects} />
+      <Projects {...portfolio} />
       <Skillset/>
        
       </div>
