@@ -9,7 +9,12 @@ import Projects from './components/Projects';
 
 const portfolio = {
   profile: {
-    title: '',
+    mainSection: true,
+    name: 'Diana Maerean',
+    calling: ['Web Designer','Frontend Developer'],
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
+  },
+  projects: {
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
     about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. '
@@ -33,7 +38,7 @@ class App extends Component {
             {() => (<Skillset />)} />
        </Switch>*/}
       <Home {...portfolio.profile} />
-      <Projects/>
+      <Projects {...portfolio.projects} />
       <Skillset/>
        
       </div>
