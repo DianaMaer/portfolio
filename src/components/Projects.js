@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AdditionalName from './AdditionalName';
-import test from '../images/test1.png'
+import test from '../images/test1.jpg'
+
 
 
 const Projects = (props) => {
@@ -16,7 +17,8 @@ const Projects = (props) => {
     <div className="tehnical-sections-container" id='projects'>
         <h2>Work</h2>
         <AdditionalName name={props.profile.name} mainSection={props.profile.mainSection} />
-        <div className="project-header projects-container" onClick={()=>togglePanel()}>
+
+        <div className="project-header " onClick={()=>togglePanel()}>
             <h3>{props.projects.nameProject}</h3>
             {open ?     <h3>&uarr;</h3> : <h3>&darr;</h3>}
         </div>
@@ -26,14 +28,26 @@ const Projects = (props) => {
             {open ? null : <hr/>}
 
             {/* add the content of the container when is opened*/}
-            {open ? (<>
-                        <div className='project-container'>
-                        {props.projects.description} </div>
-                        <hr />
-                    </>): null}
+            {open &&
+            (<div className="columns-projects">
+                <div className="first-col-projects">
+                    <p>{props.projects.description}</p> 
+                    <p>Technologies</p>
+                    <div className="button-section">
+                        <a href="">Visit</a> 
+                        <a href="">Source</a>
+                    </div>   
+                </div>
+                <div className="sec-col-projects">
+                    <img src={test} alt=""/>
+                </div>
+            
+            </div>)}
         </div>
-    </div>);
-    }
+
+    </div>
+    );
+}
     
     
 export default Projects;

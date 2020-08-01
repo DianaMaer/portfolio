@@ -19,17 +19,31 @@ h1, h2{
   color: #333;
 }
 
+h2{
+  font-size: 9rem;
+  margin-bottom: 1.875rem;
+}
+
 h4{
   font-size: 1.25rem;
   line-height: 1.375rem;
   color: #333;
   font-weight: 500;
   font-style: italic;
-  margin: 1.25rem 0 1.625rem 0;
+  margin: 1.25rem 0 2rem 0;
+}
+
+h3{
+  font-size: 2.25rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 
 hr{
   width: 100%;
+  border: 0;
+  height: 1px;
+  background: #333; 
 }
 /*Navbar*/
 .navbar{
@@ -118,6 +132,18 @@ hr{
 /*END Home Section*/
 
 /*Work Section*/
+#projects{
+  height: 800px;
+}
+
+.projects-container{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid  #333;
+}
+
 .tehnical-sections-container{
   display: flex;
   flex-direction: column;
@@ -127,24 +153,53 @@ hr{
   margin-bottom: 9.375rem;
 }
 
-.projects-container{
-  width: 75%;
-
-}
-
-#projects{
-  min-height: 90vh;
-  /*background-color: lightcoral;*/
-}
-
 .project-header{
  /* border-bottom: 2px solid black;*/
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.625rem 0;
+  width: 75%;
 }
 
 .project-header:hover{
   cursor: pointer;
+}
+
+.first-col-projects, .sec-col-projects{
+  width: 45%;
+}
+
+.first-col-projects{
+  display: flex;
+  flex-direction: column  ;
+  justify-content: space-between;
+}
+
+
+.sec-col-projects{
+  /*background-color: tomato;*/
+  display: flex;
+}
+
+.columns-projects{
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+  align-self: flex-end;
+  border: 1px solid #333;
+}
+
+.button-section{
+  width:60%;
+  display: flex;
+  justify-content: space-between ;
+}
+.button-section a{
+  background-color: whitesmoke;
 }
 /*END Work Section*/
 

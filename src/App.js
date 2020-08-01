@@ -15,9 +15,10 @@ const portfolio = {
     about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. ',
   },
   projects: {
-    nameProject: 'Project1',
+    nameProject: 'Project',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula.',
     src: './images/test1',
+    tehnologies: ['Html', 'Css', 'JavaScript'],
   },
 }
 
