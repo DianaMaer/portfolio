@@ -38,7 +38,7 @@ class App extends Component {
             {() => (<Skillset />)} />
        </Switch>*/}
        
-       <Home {...portfolio.profile} />
+      <Home {...portfolio.profile} />
       <Projects {...portfolio} />
       <Skillset/>
        
