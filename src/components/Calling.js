@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-//import './Home.css';
-
-
 
 class Calling extends Component{
     constructor(props){
