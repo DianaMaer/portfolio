@@ -8,11 +8,11 @@
 }
 
 .App {
-  padding: 0px 4.063rem;
+  padding: 0px 3rem;
 }
 
 /*Typography*/
-h1{
+h1, h2{
   text-transform: uppercase;
   font-size: 9.375rem;
   line-height: 9.375rem;
