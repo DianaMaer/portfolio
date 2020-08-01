@@ -28,7 +28,105 @@ h4{
   margin: 1.25rem 0 1.625rem 0;
 }
 
+/*Navbar*/
+.navbar{
+  width: 10%;
+  position: fixed;
+  bottom: 4.375rem;
+  list-style: none;
+}
+
+.navbar a{ 
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Montserrat', sans-serif;
+  font-family: 'Anonymous Pro', monospace;*/
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.navbar li{
+  margin: 0.375rem 0;
+}
+
+.active{ 
+  font-weight: 300 !important;
+}
+
+.navbar li a:hover{
+  font-weight: 300;
+}
+
+/*END Navbar*/
 
 
+/*Home Section*/
+/*style the main section*/
+.main-component-home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  height: 90vh;
+}
+
+.component-content{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: flex-end;
+  text-align: end;
+  height: 100%;
+  justify-content: space-between;
+}
+  
+/*style Calling Component
+.name-calling-wrapper{
+  height: 50%;
+  #typing-effect{
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 5.25rem;
+}
+}*/
 
 
+.calling-text{
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 5.25rem;
+}
+
+.additional-name {
+  font-size: 1.875rem;
+  color: brown;
+}
+
+.additional-name-hidd {
+  visibility: hidden;
+}
+
+/*END Home Section*/
+
+/*Work Section*/
+#projects{
+  height: 100vh;
+  /*background-color: lightcoral;*/
+  padding: 50px 0;
+}
+
+.project-header{
+ /* border-bottom: 2px solid black;*/
+ display: flex;
+ justify-content: space-between;
+}
+
+.project-header:hover{
+  cursor: pointer;
+}
+/*END Work Section*/

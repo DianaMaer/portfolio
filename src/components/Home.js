@@ -3,7 +3,7 @@ import Name from './Name';
 import Calling from './Calling';
 import Headline from './Headline';
 import AdditionalName from './AdditionalName';
-import './Home.css';
+//import './Home.css';
 import '../App.css';
 
 

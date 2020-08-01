@@ -1,25 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import AdditionalName from './AdditionalName';
 import test from '../images/test1.png'
-import './Projects.css';
+
 import Collapsible from 'react-collapsible';
 
-
-{/*const Projects = ({profile, projects}) => {
- 
-    return(
-        <div id='projects'>
-            
-         <AdditionalName name={profile.name} mainSection={profile.mainSection} />
-         <Collapsible classParentString="collapsible-section"trigger={projects.nameProject}>
-             <hr />
-            <p>{projects.nameProject}</p>
-            <p>{projects.description}</p>
-            <img src={test} alt="project-img"/>
-    </Collapsible>
-            </div>
-            ); 
-}*/}
 
 const Projects = (props) => {
     const [open, setOpen] = useState(false)
