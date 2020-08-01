@@ -5,7 +5,7 @@ import AdditionalName from './AdditionalName';
 const Home = (props) => {
     console.log('props from home:', props);
     return(
-        <div className="main-component-home" id='home'>
+        <div className="container-home" id='home'>
             <AdditionalName name={props.name} mainSection={props.mainSection} />
             <div className="component-content">
                  <h1>{props.name}</h1>

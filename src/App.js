@@ -37,9 +37,12 @@ class App extends Component {
           <Route path ='/skillset' render = 
             {() => (<Skillset />)} />
        </Switch>*/}
-      <Home {...portfolio.profile} />
+       
+       <Home {...portfolio.profile} />
       <Projects {...portfolio} />
       <Skillset/>
+       
+      
        
       </div>
     );

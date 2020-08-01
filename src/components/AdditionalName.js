@@ -7,5 +7,4 @@ const AdditionalName = (props) => {
     )
 }
 
-
 export default AdditionalName;
