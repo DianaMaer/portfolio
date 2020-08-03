@@ -136,14 +136,7 @@ hr{
   height: 800px;
 }
 
-.projects-container{
-  width: 75%;
-  display: flex;
- /* flex-direction: column;*/
-  justify-content: space-between;
-  border-bottom: 2px solid  #333;
-}
-
+  /*style the container of section WORK*/
 .tehnical-sections-container{
   display: flex;
   flex-direction: column;
@@ -153,17 +146,32 @@ hr{
   margin-bottom: 9.375rem;
 }
 
-.project-header{
- /* border-bottom: 2px solid black;*/
+  /*style the main project container*/
+.projects-container{
+  width: 75%;
   display: flex;
   justify-content: space-between;
-  margin: 0.625rem 0;
-  width: 75%;
+  border-bottom: 1px solid  #333;
+  padding-bottom: 1rem;
 }
 
-.project-header:hover{
-  cursor: pointer;
-}
+.project-header{
+   display: flex;
+   justify-content: space-between;
+   margin: 0.625rem 0;
+   width: 75%;
+ }
+ 
+ .project-header:hover{
+   cursor: pointer;
+ }
+
+
+  /*style the collapsible container */
+.columns-projects{
+    display: flex;
+    justify-content: space-between;
+  }
 
 .first-col-projects, .sec-col-projects{
   width: 45%;
@@ -175,17 +183,12 @@ hr{
   justify-content: space-between;
 }
 
-
 .sec-col-projects{
   background-color: tomato;
   display: flex;
   justify-content: end;
 }
 
-.columns-projects{
-  display: flex;
-  justify-content: space-between;
-}
 
 img{
   height: 300px;
@@ -198,10 +201,12 @@ img{
   display: flex;
   justify-content: space-between ;
 }
+
 .button-section a{
   background-color: whitesmoke;
 }
 /*END Work Section*/
+
 
 /*Skillset Section*/
 #skillset{
