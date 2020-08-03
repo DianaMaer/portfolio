@@ -139,7 +139,7 @@ hr{
 .projects-container{
   width: 75%;
   display: flex;
-  flex-direction: column;
+ /* flex-direction: column;*/
   justify-content: space-between;
   border-bottom: 2px solid  #333;
 }
@@ -177,8 +177,9 @@ hr{
 
 
 .sec-col-projects{
-  /*background-color: tomato;*/
+  background-color: tomato;
   display: flex;
+  justify-content: end;
 }
 
 .columns-projects{
@@ -189,7 +190,6 @@ hr{
 img{
   height: 300px;
   width: 300px;
-  align-self: flex-end;
   border: 1px solid #333;
 }
 
