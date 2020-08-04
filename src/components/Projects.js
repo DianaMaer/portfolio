@@ -23,10 +23,7 @@ const Projects = (props) => {
             {open ?     <h3>&uarr;</h3> : <h3>&darr;</h3>}
         </div>
 
-    {/* add the line below project name only when the container is closed*/}
         <div className="projects-container">
-            {/* {open ? null : <hr/>}*/}
-
             {/* add the content of the container when is opened*/}
             {open &&
             (<div className="columns-projects">
