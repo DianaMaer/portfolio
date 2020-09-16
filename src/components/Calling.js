@@ -22,7 +22,7 @@ class Calling extends Component{
     //     }
     // }
     render(){
-        console.log('props from calling:', this.props.calling);
+       console.log('props from calling:', this.props.calling);
             
         return(
             <div id="typing-effect">

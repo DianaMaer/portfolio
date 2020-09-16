@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import AdditionalName from './AdditionalName';
 import test from '../images/test1.jpg'
 
 
 
-const Projects = (props) => {
-    const [open, setOpen] = useState(false)
+const Project = ({projectInfo}) => {
+    const [open, setOpen] = useState(false);
     
     //change the state of open
     const togglePanel = ()=> {
-        console.log(open);
+        //console.log(open);
         setOpen(!open);
     }
-   
+   console.log(`See what I have from Work`, {projectInfo});
     return (
-    <div className="tehnical-sections-container" id='projects'>
-        <h2>Work</h2>
-        <AdditionalName name={props.profile.name} mainSection={props.profile.mainSection} />
+    <div className="container-projects" id='projects'>
 
         <div className="project-header " onClick={()=>togglePanel()}>
-            <h3>{props.projects.nameProject}</h3>
-            {open ?     <h3>&uarr;</h3> : <h3>&darr;</h3>}
+            <h3>{projectInfo.projectName}</h3>
+            {open ?   <h3>&uarr;</h3> : <h3>&darr;</h3>}
         </div>
 
         <div className="projects-container">
@@ -28,7 +25,7 @@ const Projects = (props) => {
             {open &&
             (<div className="columns-projects">
                 <div className="first-col-projects">
-                    <p>{props.projects.description}</p> 
+                    <p>{projectInfo.projectDescription}</p> 
                     <p>Technologies</p>
                     <div className="button-section">
                         <a href="">Visit</a> 
@@ -36,7 +33,7 @@ const Projects = (props) => {
                     </div>   
                 </div>
                 <div className="sec-col-projects">
-                    <img src={test} alt=""/>
+                    <img src={projectInfo.projectUrl} alt=""/>
                 </div>
             
             </div>)}
@@ -47,4 +44,4 @@ const Projects = (props) => {
 }
     
     
-export default Projects;
+export default Project;

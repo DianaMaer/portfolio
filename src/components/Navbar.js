@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+    
     return(
         <ul className="navbar">
              <li>
@@ -23,6 +24,7 @@ const Navbar = () => {
             <li><NavLink activeClassName='active' to='projects'>Projects</NavLink></li>
     <li><NavLink activeClassName='active' to='skillset'>Skillset</NavLink></li>*/}
         </ul>
+        
     )
 
 }

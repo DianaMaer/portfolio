@@ -4,15 +4,17 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Skillset from './components/Skillset';
-import Projects from './components/Projects';
+import Project from './components/Project';
+import Work from './components/Work';
+import Contact from './components/Contact';
 
 
 const portfolio = {
   profile: {
-    mainSection: true,
+    //mainSection: true,
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero ante, fermentum vitae egestas vehicula, tincidunt euismod turpis. Fusce fermentum eget sem non feugiat. ',
+    about: 'passionate about bringing ideas to life in the browser and offering meaningful and relevant user experiences ',
   },
   projects: {
     nameProject: 'Project',
@@ -25,7 +27,24 @@ const portfolio = {
 
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      projects: [],
+    }
+  }
+  fetchProjects = () =>{
+    fetch('https://hydro-backbacon-77475.herokuapp.com/works') 
+      .then(resp => resp.json())
+        .then(data =>  this.setState({projects: data}))
+  }
+
+  componentDidMount() {
+    this.fetchProjects();
+  }
+
   render(){
+    const { projects } =this.state;
     return (
       <div className="App">
         <Navbar />
@@ -40,10 +59,10 @@ class App extends Component {
        </Switch>*/}
        
       <Home {...portfolio.profile} />
-      <Projects {...portfolio} />
+      <Work projects={projects}/>
+      {/*<Project {...portfolio} />*/}
       <Skillset/>
-       
-      
+      <Contact/>
        
       </div>
     );
