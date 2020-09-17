@@ -15,19 +15,19 @@ class Contact extends React.Component {
     return(
     <div className="container-contact" id="contact">
       <h1>CONTACT</h1>
-      <div className="component-content"> 
-        <form className="contactForm"  
+      <div className="component-content component-content-contact"> 
+        <form className="contact-form"  
             onSubmit={this.submitForm}
             action="https://formspree.io/xzbkpjqr"
             method="POST">    
           <div className="form-input-container">
-            <input type="text" placeholder="Name*" name="title" className="form-field" />
+            <input type="text" placeholder="Name*" name="title" className="form-field" required/>
           </div>
           <div className="form-input-container">
-              <input type="email" placeholder="Email*" name="email" className="form-field" />
+              <input type="email" placeholder="Email*" name="email" className="form-field" required/>
          </div>
          <div className="form-input-container">
-             <textarea type="text" placeholder="Message*" name="message" className="form-field-text" rowSpan={4} />
+             <textarea type="text" placeholder="Your message ...*" name="message" className="form-field-text" rowSpan={4} required />
          </div>
 
         {status === "SUCCESS" ? <p>Thanks! I will reply you soon !</p> : <div className="form-button-container">

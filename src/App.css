@@ -21,6 +21,7 @@
   flex-direction: column;
   text-align: end;
   align-items: flex-end;
+  /*justify-content: space-between;*/
 }
 
 /*-- Typography --*/
@@ -98,7 +99,7 @@ h3{
 .component-content{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   align-items: flex-end;
   text-align: end;
   height: 100%;
@@ -162,7 +163,7 @@ h3{
 }--*/
   /*-- style the main project container --*/
 .projects-container{
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid  #333;
@@ -226,5 +227,19 @@ img{
 /*--- END Skillset Section ---*/
 
 /*--- Contact Section ---*/
+.component-content-contact{
+  flex-direction: row;
+}
+.contact-form{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+.form-input-container{
+  padding: 5px 0;
+  width: 80%;
+}
 
 /*--- END Contact Section ---*/
