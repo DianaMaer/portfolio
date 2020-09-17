@@ -14,6 +14,8 @@ class Contact extends React.Component {
     const { status } = this.state;
     return(
     <div className="container-contact" id="contact">
+      <h1>CONTACT</h1>
+      <div className="component-content"> 
         <form className="contactForm"  
             onSubmit={this.submitForm}
             action="https://formspree.io/xzbkpjqr"
@@ -33,6 +35,7 @@ class Contact extends React.Component {
         </div>}
         {status === "ERROR" && <p>Ooops! There was an error. Please try again to fill in our form !</p>}  
         </form>
+      </div>
     </div>
     );}
 

@@ -11,7 +11,19 @@
   padding: 0px 3.75rem;
 }
 
-/*Typography*/
+
+#home, #contact, #skillset, #work {
+  min-height: 98vh;
+  background-color: lightcoral;
+  margin-bottom: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+}
+
+/*-- Typography --*/
 h1, h2{
   text-transform: uppercase;
   font-size: 9.375rem;
@@ -37,7 +49,7 @@ h3{
   padding-bottom: 0.5rem;
 }
 
-/*Navbar*/
+/*-- Navbar --*/
 .navbar{
   width: 10%;
   position: fixed;
@@ -70,24 +82,23 @@ h3{
 /*END Navbar*/
 
 
-/*Home Section*/
-/*style the main section*/
+/*--- Home Section ---*/
+  /*-- style the main section --*/
 .container-home{
-  display: flex;
+   /*display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 2rem 0;
-  height: 100vh;
+ height: 100vh;
   margin-bottom: 9.375rem;
-  text-align: end;
+  text-align: end;*/
  
 }
 
 .component-content{
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   align-items: flex-end;
   text-align: end;
   height: 100%;
@@ -130,24 +141,26 @@ h3{
   margin: 1.25rem 0 2rem 0;
 }
 
-/*END Home Section*/
+/*--- END Home Section ---*/
 
-/*Work Section*/
+/*--- Work Section ---*/
 #projects{
   height: 800px;
 }
 
-  /*style the container of section WORK*/
+  /*-- style the container of section WORK --*/
 .container-projects{
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 2rem 0;
   height: 100vh;
-  margin-bottom: 9.375rem;
+  margin-bottom: 9.375rem;*/
 }
-
-  /*style the main project container*/
+  /*-- ???? style the main project container 
+.component-content-project{
+  width: 100%;
+}--*/
+  /*-- style the main project container --*/
 .projects-container{
   width: 75%;
   display: flex;
@@ -168,7 +181,7 @@ h3{
  }
 
 
-  /*style the collapsible container */
+  /*-- style the collapsible container --*/
 .columns-projects{
     display: flex;
     justify-content: space-between;
@@ -192,7 +205,6 @@ h3{
 
 
 img{
- 
   width: 100%;
   border: 1px solid #333;
 }
@@ -206,12 +218,13 @@ img{
 .button-section a{
   background-color: whitesmoke;
 }
-/*END Work Section*/
+/*--- END Work Section ---*/
 
 
-/*Skillset Section*/
-#skillset{
-  height: 100vh;
-  background-color: lightcoral;
-}
-/*END Skillset Section*/
+/*--- Skillset Section ----*/
+
+/*--- END Skillset Section ---*/
+
+/*--- Contact Section ---*/
+
+/*--- END Contact Section ---*/

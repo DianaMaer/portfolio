@@ -7,14 +7,13 @@ const Home = (props) => {
     return(
         <div className="container-home" id='home'>
            {/* <AdditionalName name={props.name} mainSection={props.mainSection} />*/} 
-            <div className="component-content">
-                 <h1>{props.name}</h1>
-                    <Calling calling={props.calling} />
+           <h1>{props.name}</h1>
+           <div className="component-content"> 
+                <Calling calling={props.calling} />
                 <h4 className="about-header-text">{props.about}</h4>
             </div>
         </div>
     )
 }
-
 
 export default Home;

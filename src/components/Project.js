@@ -13,8 +13,7 @@ const Project = ({projectInfo}) => {
     }
    console.log(`See what I have from Work`, {projectInfo});
     return (
-    <div className="container-projects" id='projects'>
-
+    <div className="component-content component-content-project">
         <div className="project-header " onClick={()=>togglePanel()}>
             <h3>{projectInfo.projectName}</h3>
             {open ?   <h3>&uarr;</h3> : <h3>&darr;</h3>}
