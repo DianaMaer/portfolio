@@ -11,7 +11,7 @@ const Project = ({projectInfo}) => {
         //console.log(open);
         setOpen(!open);
     }
-   console.log(`See what I have from Work`, {projectInfo});
+   console.log(`Props from Work`, {projectInfo});
     return (
     <div className="component-content component-content-project">
         <div className="project-header " onClick={()=>togglePanel()}>
@@ -32,7 +32,7 @@ const Project = ({projectInfo}) => {
                     </div>   
                 </div>
                 <div className="sec-col-projects">
-                    <img src={projectInfo.projectUrl} alt=""/>
+                    <img className="screen-shot" src={projectInfo.projectUrl} alt="screen-shot-project"/>
                 </div>
             
             </div>)}

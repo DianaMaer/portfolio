@@ -9,6 +9,8 @@
 
 .App {
   padding: 0px 3.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -21,7 +23,19 @@
   flex-direction: column;
   text-align: end;
   align-items: flex-end;
-  /*justify-content: space-between;*/
+  /* align-self: flex-end;
+  justify-content: space-between;*/
+}
+
+.component-content{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: flex-end;
+  text-align: end;
+  height: 100%;
+  justify-content: space-between;
+  background-color: lightsalmon;
 }
 
 /*-- Typography --*/
@@ -96,15 +110,7 @@ h3{
  
 }
 
-.component-content{
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  align-items: flex-end;
-  text-align: end;
-  height: 100%;
-  justify-content: space-between;
-}
+
   
 /*style Calling Component
 .name-calling-wrapper{
@@ -149,18 +155,18 @@ h3{
   height: 800px;
 }
 
-  /*-- style the container of section WORK --*/
+  /*-- style the container of section WORK 
 .container-projects{
   /*display: flex;
   flex-direction: column;
   align-items: flex-end;
   height: 100vh;
-  margin-bottom: 9.375rem;*/
-}
-  /*-- ???? style the main project container 
+  margin-bottom: 9.375rem;
+}*/
+  /*-- ???? style the main project container --*/
 .component-content-project{
   width: 100%;
-}--*/
+}
   /*-- style the main project container --*/
 .projects-container{
   width: 100%;
@@ -205,7 +211,7 @@ h3{
 }
 
 
-img{
+.screen-shot{
   width: 100%;
   border: 1px solid #333;
 }
@@ -223,12 +229,29 @@ img{
 
 
 /*--- Skillset Section ----*/
+.component-content-skill{
+  flex-direction: row;
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  background-color: lemonchiffon;
+  text-align: start;
+}
+
+.webdesign-icon{
+  width: 15%;
+}
 
 /*--- END Skillset Section ---*/
 
 /*--- Contact Section ---*/
 .component-content-contact{
   flex-direction: row;
+  padding: 5px 0;
 }
 .contact-form{
   width: 45%;
@@ -238,8 +261,13 @@ img{
 
 }
 .form-input-container{
-  padding: 5px 0;
   width: 80%;
+  margin-bottom: 10px;
+}
+
+.form-field{
+  height: 30px;
+  width: 100%;
 }
 
 /*--- END Contact Section ---*/
