@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import test from '../images/test1.jpg'
-
-
+import test from '../images/test1.jpg';
 
 const Project = ({projectInfo}) => {
     const [open, setOpen] = useState(false);
@@ -34,10 +32,8 @@ const Project = ({projectInfo}) => {
                 <div className="sec-col-projects">
                     <img className="screen-shot" src={projectInfo.projectUrl} alt="screen-shot-project"/>
                 </div>
-            
             </div>)}
         </div>
-
     </div>
     );
 }

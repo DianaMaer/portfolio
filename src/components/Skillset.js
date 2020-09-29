@@ -1,77 +1,53 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import Skill from './Skill';
 
+const Skillset = () =>{
+    const skillset = [
+        {name: 'Web Design',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. ',
+         technologies: ['HTML', 'CSS'],
+         borderRadius: 100,
+         widthOne: '20',
+         widthTwo: '30',
+         widthThree: '40',
+         topOne: '0',
+         topTwo: '7',
+         topThree: '14px'
+        },
+        {name: 'Froentend',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. ',
+        technologies: ['HTML', 'JavaScript'],
+        borderRadius: '20',
+        widthOne: '20',
+        widthTwo: '30',
+        widthThree: '40',
+        topOne: '0',
+        topTwo: '7',
+        topThree: '14px'
 
-class Skillset extends Component{
-    constructor(){
-        super();
-        this.state = {
-            isFlipped: false,
-        };
-    }
+        },
+        {
 
-    handleClick =(e) => {
+        },
+    ]
+
+    const [flipp, setFlipp] = useState(false);
+
+    const handleClick =() => {
         console.log('click');
-        e.preventDefault();
-        this.setState({ isFlipped: !this.state.isFlipped });
+        setFlipp(!flipp)
     }
-     
-    render(){
-     const { isFlipped } =this.state;
      return(
         <div id="skillset" className="container-skillset"> 
           <h2>SKILLSET</h2>
           <div className="component-content component-content-skill"> 
-            <div className="skill">
-            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-            <div className="skill-face skill-face-front">
-                <h4>Webdesign</h4>
-                <img className="webdesign-icon"src="webdesign.svg" alt="webdesign-icon"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. Vestibulum cursus enim quis lobortis hendrerit. </p>
-                <button onClick={this.handleClick}>Click to flip</button>
-            </div>
- 
-            <div className="skill-face skill-face-back">
-            back
-                <button onClick={this.handleClick}>Click to flip</button>
-                </div>
-            </ReactCardFlip>
-            </div>
-
-            <div className="skill">
-            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-            <div className="skill-face skill-face-front">
-                <h4>Webdesign</h4>
-                <img className="webdesign-icon"src="webdesign.svg" alt="webdesign-icon"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. Vestibulum cursus enim quis lobortis hendrerit. </p>
-                <button onClick={this.handleClick}>Click to flip</button>
-            </div>
- 
-            <div className="skill-face skill-face-back">
-            back
-                <button onClick={this.handleClick}>Click to flip</button>
-                </div>
-            </ReactCardFlip>
-            </div>
-
-            <div className="skill">
-            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-            <div className="skill-face skill-face-front">
-                <h4>Webdesign</h4>
-                <img className="webdesign-icon"src="webdesign.svg" alt="webdesign-icon"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. Vestibulum cursus enim quis lobortis hendrerit. </p>
-                <button onClick={this.handleClick}>Click to flip</button>
-            </div>
- 
-            <div className="skill-face skill-face-back">
-            back
-                <button onClick={this.handleClick}>Click to flip</button>
-                </div>
-            </ReactCardFlip>
-            </div>
+          {skillset.map((skill, index) => <Skill skillInfo={skill} index={index} />)}
+        
+            
           </div> {/*--end component-content component-content-skill*/}
         </div>  /*--end skillset */ 
-    )
-    }   
+    );
+ 
 }
 export default Skillset;
