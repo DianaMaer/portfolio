@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import {CSSTransition} from 'react-transition-group';
+import Zoom from 'react-reveal/Zoom';
 
 const Skill = ({ skillInfo, index }) => {
     const [flipp, setFlipp] = useState(false);
@@ -10,16 +12,20 @@ const Skill = ({ skillInfo, index }) => {
         setFlipp(!flipp)
     }
 
-    const handleHover =() => {
+    const handleMouseEnter =() => {
+        console.log('hover');
+        setInside(!inside)
+    }
+    const handleMouseLeave =() => {
         console.log('hover');
         setInside(!inside)
     }
     console.log(skillInfo);
     console.log(index);
     return(
-        <div className="skill">
+        <div className="skill" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <ReactCardFlip isFlipped={flipp} flipDirection="vertical">
-                <div className="skill-face skill-face-front" onMouseOver={handleHover}>
+                <div className="skill-face skill-face-front" >
                     <div className="stack-shapes">
                     {(index ===0) &&  <>
                        <div className="shape-circle shape-one" ></div>
@@ -43,7 +49,11 @@ const Skill = ({ skillInfo, index }) => {
                     <p className="skill-description">{skillInfo.description} </p>
                     <p className="skill-technologies">{skillInfo.technologies} </p>
                     
+                    {/* reveal the button if the mouse is inside of skill container*/}
+                    {inside && 
+                    <Zoom >
                         <h3 className="skill-button" onClick={handleClick}>&rarr;</h3>
+                    </Zoom>}
                    
                 </div>
                 <div className="skill-face skill-face-back">
