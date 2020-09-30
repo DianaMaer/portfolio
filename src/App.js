@@ -14,7 +14,7 @@ const portfolio = {
     //mainSection: true,
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
-    about: 'passionate about bringing ideas to life in the browser and offering meaningful and relevant user experiences ',
+    about: 'I make interfaces and develop rich web experiences & web applications. I create, break and fix things, wrangle with code and design stuff.',
   },
   projects: {
     nameProject: 'Project',

@@ -5,30 +5,16 @@ import Skill from './Skill';
 const Skillset = () =>{
     const skillset = [
         {name: 'Web Design',
-         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. ',
+         description: 'In my hands, every project deserves going for the extra mile finding the exact right color scheme, layout and font.',
          technologies: ['HTML', 'CSS'],
-         borderRadius: 100,
-         widthOne: '20',
-         widthTwo: '30',
-         widthThree: '40',
-         topOne: '0',
-         topTwo: '7',
-         topThree: '14px'
         },
-        {name: 'Froentend',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla ut sem lobortis viverra sit amet ut arcu. Sed sodales a nibh nec elementum. ',
-        technologies: ['HTML', 'JavaScript'],
-        borderRadius: '20',
-        widthOne: '20',
-        widthTwo: '30',
-        widthThree: '40',
-        topOne: '0',
-        topTwo: '7',
-        topThree: '14px'
-
+        {name: 'Front-End Development',
+        description: 'I enjoy bringing ideas to life in the browser and  developing rich web experiences & web applications.',
+        technologies: 'HTML, CSS, JavaScript, React, Github',
         },
-        {
-
+        {name: 'User Experience',
+        description: 'I care about people, and believe in putting the user first offering them thoughtful interactions and relevant experiences',
+        technologies: '',
         },
     ]
 

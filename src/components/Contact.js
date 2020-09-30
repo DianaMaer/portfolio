@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Slide from 'react-reveal/Slide';
 
 class Contact extends React.Component {
     constructor(props) {
@@ -14,8 +14,12 @@ class Contact extends React.Component {
     const { status } = this.state;
     return(
     <div className="container-contact" id="contact">
-      <h1>CONTACT</h1>
-      <div className="component-content component-content-contact"> 
+      <h2>CONTACT</h2>
+      <div className="component-content component-content-contact">
+        <h3>Drop me a line,</h3>
+        <h3>I'd like to hear from you</h3> 
+      <div className="contact-teaser">
+          <div className="form-wrapper">
         <form className="contact-form"  
             onSubmit={this.submitForm}
             action="https://formspree.io/xzbkpjqr"
@@ -31,12 +35,22 @@ class Contact extends React.Component {
          </div>
 
         {status === "SUCCESS" ? <p>Thanks! I will reply you soon !</p> : <div className="form-button-container">
-            <button className="form-button">Send.</button>
+            <button className="form-button">Send</button>
         </div>}
         {status === "ERROR" && <p>Ooops! There was an error. Please try again to fill in our form !</p>}  
         </form>
+        <img className="send-icon" src="send-icon.svg" alt="send-icon"/>
+        </div>
+        <div className="contact-icons">
+            <img className="envelope" src="envelope.svg" alt="envelope-image"/>
+        </div>
+      
       </div>
-    </div>
+       
+      
+        
+      </div> {/*end component-content-contact */}
+    </div> 
     );}
 
     submitForm(ev) {
