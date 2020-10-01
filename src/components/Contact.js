@@ -44,11 +44,12 @@ class Contact extends React.Component {
         <div className="contact-icons">
             <img className="envelope" src="envelope.svg" alt="envelope-image"/>
         </div>
-      
+        
       </div>
        
-      
-        
+      <footer>
+          <p>© 2020 — Designed and coded by <span>Diana Maerean</span> using React.</p>
+        </footer>
       </div> {/*end component-content-contact */}
     </div> 
     );}

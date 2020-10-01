@@ -34,7 +34,7 @@ class App extends Component {
     }
   }
   fetchProjects = () =>{
-    fetch('https://hydro-backbacon-77475.herokuapp.com/works') 
+    fetch('https://hydro-backbacon-77475.herokuapp.com/projekts') 
       .then(resp => resp.json())
         .then(data =>  this.setState({projects: data}))
   }

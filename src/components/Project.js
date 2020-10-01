@@ -13,8 +13,8 @@ const Project = ({projectInfo}) => {
     return (
     <div className="component-content component-content-project">
         <div className="project-header " onClick={()=>togglePanel()}>
-            <h3>{projectInfo.projectName}</h3>
-            {open ?   <h3>&uarr;</h3> : <h3>&darr;</h3>}
+            <h3>{projectInfo.name}Project Name</h3>
+            {open ?  <h3>&uarr;</h3> : <h3>&darr;</h3>}
         </div>
 
         <div className="projects-container">
@@ -22,15 +22,15 @@ const Project = ({projectInfo}) => {
             {open &&
             (<div className="columns-projects">
                 <div className="first-col-projects">
-                    <p>{projectInfo.projectDescription}</p> 
-                    <p>Technologies</p>
+                    <p>{projectInfo.description}Cras id elementum massa. Vivamus dolor eros, vehicula vel sem dictum, porttitor venenatis mauris. Duis placerat nec erat eget pharetra. Vivamus vehicula nulla nec sapien pulvinar finibus. Nulla in enim velit. </p> 
+                    <p>{projectInfo.technologie} HTML, CSS, React</p>
                     <div className="button-section">
                         <a href="">Visit</a> 
                         <a href="">Source</a>
                     </div>   
                 </div>
                 <div className="sec-col-projects">
-                    <img className="screen-shot" src={projectInfo.projectUrl} alt="screen-shot-project"/>
+                    <img className="screen-shot" src={projectInfo.url} alt="screen-shot-project"/>
                 </div>
             </div>)}
         </div>
