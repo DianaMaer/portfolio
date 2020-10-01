@@ -14,7 +14,7 @@ const Skillset = () =>{
         },
         {name: 'User Experience',
         description: 'I care about people, and believe in putting the user first offering them thoughtful interactions and relevant experiences',
-        technologies: '',
+        technologies: 'Design Thinking, Design Thinking, Design Thinking',
         },
     ]
 

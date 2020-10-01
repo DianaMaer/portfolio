@@ -8,8 +8,8 @@ const Home = (props) => {
         <div className="container-home" id='home'>
            {/* <AdditionalName name={props.name} mainSection={props.mainSection} />*/} 
            <h1>{props.name}</h1>
+           <Calling calling={props.calling} />
            <div className="component-content"> 
-                <Calling calling={props.calling} />
                 <h4 className="about-header-text">{props.about}</h4>
             </div>
         </div>

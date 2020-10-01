@@ -16,8 +16,8 @@ class Contact extends React.Component {
     <div className="container-contact" id="contact">
       <h2>CONTACT</h2>
       <div className="component-content component-content-contact">
-        <h3>Drop me a line,</h3>
-        <h3>I'd like to hear from you</h3> 
+        <h3>Drop me a line, <span className="heading-contact">I would like <br/>to hear from you</span> </h3>
+    
       <div className="contact-teaser">
           <div className="form-wrapper">
         <form className="contact-form"  
