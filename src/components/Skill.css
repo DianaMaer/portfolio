@@ -1,0 +1,80 @@
+/*--- Skillset Section ----*/
+.component-content-skill{
+    flex-direction: row;
+  }
+  
+  .skill{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: 420px;
+    text-align: start;
+    border-radius: 2px;
+    align-items: flex-start;
+  }
+  
+  .skill-face{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    height: 420px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  .skill-face-back{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    padding: 35px 10px;
+  }
+  
+  .skill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 52%;
+    margin: 10px 0;
+    align-self: center;
+  }
+  
+  .skill-button{
+    cursor: pointer;
+    width: 15%;
+    margin-top: 5px;
+  }
+  
+  
+  .skill-description{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .skill-technologies{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+    color: #333;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .skill-name{
+    font-size: 22px;
+    font-weight: 800;
+    padding: 10px 0;
+    margin-bottom: 5px;
+  }
+  
+  .skill-face-front  > svg:first-of-type{
+    stroke: black;
+  }
+  
+  .c-icon{
+   fill: none;
+   stroke-width: 2px;
+   height: 100px;
+   align-self: flex-start;
+  }
+  
+  /*--- END Skillset Section ---*/
+  

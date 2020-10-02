@@ -4,7 +4,6 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Skillset from './components/Skillset';
-import Project from './components/Project';
 import Work from './components/Work';
 import Contact from './components/Contact';
 
@@ -14,7 +13,7 @@ const portfolio = {
     //mainSection: true,
     name: 'Diana Maerean',
     calling: ['Web Designer','Frontend Developer'],
-    about: 'I make interfaces and develop rich web experiences & web applications. I create, break and fix things, wrangle with code and design stuff.',
+    about: 'I design and code beautifully simple things. I create, break and fix, wrangle with code and design stuff.',
   },
   projects: {
     nameProject: 'Project',
@@ -63,7 +62,6 @@ class App extends Component {
       {/*<Project {...portfolio} />*/}
       <Skillset/>
       <Contact/>
-       
       </div>
     );
   }

@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
     
     return(
         <ul className="navbar">
-             <li>
+            <li>
                 <a href='#home' className='active'>Home</a> 
             </li>
             <li>
@@ -20,13 +21,8 @@ const Navbar = () => {
             <li>
                 <a href='#contact'>Contact</a> 
             </li>
-           {/*<li><NavLink activeClassName='active' exact to='/'>Home</NavLink></li>
-            <li><NavLink activeClassName='active' to='projects'>Projects</NavLink></li>
-    <li><NavLink activeClassName='active' to='skillset'>Skillset</NavLink></li>*/}
-        </ul>
-        
+        </ul> 
     )
-
 }
 
 export default Navbar;

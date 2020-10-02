@@ -30,7 +30,7 @@ const Skill = ({ skillInfo, index }) => {
     console.log(index);
     return(
         <div className="skill" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <ReactCardFlip isFlipped={flipp} flipDirection="vertical" flipSpeedFrontToBack="1.3" flipSpeedBackToFront="1.3">
+            <ReactCardFlip isFlipped={flipp} flipDirection="vertical" flipSpeedFrontToBack="1.3" flipSpeedBackToFront="1.2">
                 <div className="skill-face skill-face-front" >
                     {(index ===0) &&  
                        <>
@@ -61,9 +61,9 @@ const Skill = ({ skillInfo, index }) => {
                        </>
                     }
                   <div className="skill-content">
-                    <h4>{skillInfo.name}</h4>
+                    <h4 className="skill-name">{skillInfo.name}</h4>
                     <p className="skill-description">{skillInfo.description} </p>
-                    <p className="skill-technologies">{skillInfo.technologies} </p>
+                    <p className="skill-technologies">Skills: {skillInfo.technologies} </p>
                     
                     {/* reveal the button if the mouse is inside of skill container*/}
                     </div>
@@ -72,13 +72,15 @@ const Skill = ({ skillInfo, index }) => {
                         <h3 className="skill-button" onClick={handleClick}>&rarr;</h3>
                     </Zoom>}
                    
-                </div>
+                  </div>
                 <div className="skill-face skill-face-back">
-              
-                    <button className="skill-button"onClick={handleClick}>
-                        <p>balalalalallalal nfs,dfndkfjkfjejr lafjklejfrkj</p>
-                        <h3>&larr;</h3>
-                    </button>
+
+                    <p>{skillInfo.course}</p>
+                    <p>{skillInfo.school}</p>
+                    <p>{skillInfo.img}</p>
+
+                    <h3 className="skill-button"onClick={handleClick}>
+                        &larr;</h3>
                 </div>
             </ReactCardFlip>
          </div>

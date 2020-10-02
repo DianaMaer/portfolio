@@ -22,11 +22,17 @@ const Project = ({projectInfo}) => {
             {open &&
             (<div className="columns-projects">
                 <div className="first-col-projects">
-                    <p>{projectInfo.description}Cras id elementum massa. Vivamus dolor eros, vehicula vel sem dictum, porttitor venenatis mauris. Duis placerat nec erat eget pharetra. Vivamus vehicula nulla nec sapien pulvinar finibus. Nulla in enim velit. </p> 
-                    <p>{projectInfo.technologie} HTML, CSS, React</p>
+                    <p class="text-description">{projectInfo.description}Cras id elementum massa. Vivamus dolor eros, vehicula vel sem dictum, porttitor venenatis mauris. Duis placerat nec erat eget pharetra. Vivamus vehicula nulla nec sapien pulvinar finibus. Nulla in enim velit. </p> 
+                    <p class="text-technologies">{projectInfo.technologie} HTML, CSS, React</p>
                     <div className="button-section">
-                        <a href="">Visit</a> 
-                        <a href="">Source</a>
+                        <a href="">
+                            <img className="img-button" src="globe.svg" alt=""/>
+                            <p className="text-button">Visit</p>
+                        </a> 
+                        <a href="">
+                            <img className="img-button" src="github.svg" alt=""/>
+                            <p className="text-button">Source</p>
+                        </a> 
                     </div>   
                 </div>
                 <div className="sec-col-projects">

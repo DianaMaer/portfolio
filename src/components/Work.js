@@ -1,5 +1,7 @@
 import React from 'react';
 import Project from './Project';
+import Fade from 'react-reveal/Fade';
+import './Work.css';
 
 const Work = ({projects }) => {
     console.log(projects)
